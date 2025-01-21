@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page - Odin Project</title>
+    <link rel="stylesheet" href="../Sign-up Form/styles.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="sidebar-container">
+        <img
+          width="30%"
+          height="100%"
+          src="../Sign-up Form/Assets/Sidebarpng.png"
+          alt="Sidebar Image"
+          class="sidebar-img"
+        />
+        <div class="logo-container">
+          <img
+            src="../Sign-up Form/Assets/odin-logo.png"
+            alt="Odin Logo"
+            class="logo-img"
+          />
+          <label class="logo-header-text"> Odin </label>
+        </div>
+      </div>
+      <div class="content-area">
+        <h2> This is not a real online service!</h2> 
+          <h2>You know you need something like this in your life to help you realize your deepest dreams.</h2>
+          <h2>Sign up <em>now</em> to get started.</h2>
+          <h2>You <em>know</em> you want to.</h2>
+          
+          <br><br>
+          <h1>Let's do this!</h1>
+        </h2>
+        <div class="input-area">
+        <div class="container-grid-2">
+            <div class="input-container">
+                <label for="first-name">
+                    FIRST NAME
+                </label>
+                <input type="text" pattern="^([A-Z][A-Za-z ,.'`-]{3,30})$">
+            </div>
+            <div class="input-container">
+                <label for="last-name">
+                    LAST NAME
+                </label>
+                <input type="text">
+            </div>
+        </div>
+        
+        <div class="container-grid-2">
+        <div class="input-container">
+            <label for="email-user">
+                EMAIL
+            </label>
+            <input type="email">
+        </div>
+        <div class="input-container">
+            <label for="phone-number">
+                PHONE NUMBER
+            </label>
+            <input type="tel" step="0" pattern="[0-9]{10}" title="Enter valid South African phone number">
+        </div>
+    </div>
+    <div class="container-grid-2"> 
+        <div class="input-container">
+            <label for="passwrd-user">
+                PASSWORD
+            </label>
+            <input type="password">
+        </div>
+        <div class="input-container">
+            <label for="password-user">
+                CONFIRM PASSWORD
+            </label>
+            <input type="password">
+        </div>
+      </div>
+      <button class="acc-btn" type="submit"><span class="acc-btn-front">
+        Create Account
+      </span></button>
+      <hr class="divider">
+      <p>Already have an account?  <a href="">Log in</a></p>
+    </div>
+    </div>
+  </body>
+</html>
