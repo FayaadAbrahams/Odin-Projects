@@ -1,0 +1,73 @@
+:root {
+  --header-colour: rgb(46, 102, 92);
+  --side-bar-colour: rgb(48, 96, 152);
+  --nav-bar-colour: rgb(104, 56, 226);
+  --article-colour: rgb(125, 43, 201);
+  --footer-colour: rgb(64, 69, 82);
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: inline-grid;
+  gap: 15px;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 100px 100px 500px 100px;
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+}
+.bar {
+  border-radius: 5px;
+  font-size: small;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#header {
+  background-color: var(--header-colour);
+  grid-area: 1/ 1/ 1 /5;
+}
+
+#sidebar {
+  background-color: var(--side-bar-colour);
+  grid-area: 2 / 2/ 5/ 1;
+}
+
+#nav {
+  background-color: var(--nav-bar-colour);
+  grid-area: 2 /2 / 2 / 5;
+}
+
+#article {
+  background-color: var(--article-colour);
+  grid-area: 3/ 2/ 5/ 5;
+  text-align: left;
+}
+
+#article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+#footer {
+  background-color: var(--footer-colour);
+  grid-area: 5/5/5/1;
+}
