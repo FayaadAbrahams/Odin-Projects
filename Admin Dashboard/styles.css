@@ -25,7 +25,11 @@
 .sidebar {
   background-color: var(--sidebar-clr);
   color: var(--font-clr-light);
-  width: 240px;
+  width: 250px;
+}
+
+.sidebar a {
+  font-size: 20px;
 }
 
 .icon {
@@ -45,7 +49,7 @@
 
 .sidebar-header-container span {
   grid-column: 2 / span 2;
-  font-size: 20px;
+  font-size: 60px;
 }
 
 .atom-icon {
@@ -143,6 +147,7 @@
 .top-main-container {
   margin: 30px 0px 0px 0px;
   display: flex;
+  gap: 190px;
   height: 50px;
 }
 
@@ -198,7 +203,7 @@
 .right-user-container {
   gap: 20px;
   display: grid;
-  grid-column: 4 / span 2;
+  grid-column: 10 / span 2;
   grid-template-columns: 80px 80px 80px;
   margin-top: 5px;
   margin-bottom: 30px;
@@ -220,35 +225,35 @@
   border: none;
   background-color: rgb(78, 151, 217);
   color: white;
-  font-weight: 550;
+  font-weight: bold;
 }
 
 .user-btn:hover {
   cursor: pointer;
 }
 
-.user-btn:active {
-  padding: 2px 2px 2px 2px;
-}
-
 .tab-content-container {
   background-color: rgb(232, 237, 246);
-  height: 100vh;
+  height: 200vh;
   width: 240vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
 }
 
 .project-container {
   grid-column: 1 / span 4;
   display: grid;
-  grid-template-rows: 20px repeat(3, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20px 210px 210px;
+  grid-template-columns: 370px 370px;
   gap: 20px;
 }
 
 .announce-container {
   grid-column: 5 / span 2;
+  display: grid;
+  grid-template-rows: 20px 340px 20px 300px;
+  gap: 20px;
 }
 
 .tab-content-container > div {
@@ -261,12 +266,15 @@
 
 .project-card {
   background-color: white;
-  border-radius: 16px;
+  border-radius: 12px;
   grid-row: 2;
   display: grid;
   grid-template-columns: 20px auto;
-  box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.1);
   transition: 0.2s ease-in;
+}
+
+.project-card {
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .card-border {
@@ -275,15 +283,15 @@
   height: 100%;
   border-radius: 16px 0px 0px 16px;
   grid-row: 1;
-  transition: 0.2s ease-in;
+  transition: 0.1s ease-in;
 }
 
 .project-card:hover .card-border {
   width: 12px;
 }
-.project-card:hover{
-  box-shadow: 0px 20px 45px 0px rgba(0, 0, 0, 0.1);
-  transform: perspective(3000px) rotateX(10deg);
+.project-card:hover {
+  box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.1);
+  transform: perspective(3000px) rotateX(5deg);
   cursor: pointer;
 }
 
@@ -316,4 +324,72 @@
 
 .card-btn:hover {
   cursor: pointer;
+}
+
+.card-3 {
+  grid-row: 3;
+}
+
+.card-4 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.card-5 {
+  grid-row: 4;
+}
+
+.announcement-card {
+  background-color: white;
+  height: 330px;
+  border-radius: 12px;
+  width: 90%;
+  box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in;
+}
+
+.announcement-card a {
+  color: black;
+}
+
+hr {
+  border: 1px solid rgba(224, 224, 224, 0.726);
+  margin-top: 20px;
+}
+
+.announce-text {
+  margin: 30px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.other-user-container {
+  margin: 30px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50px 200px;
+  gap: 10px;
+}
+
+.other-user-container img {
+  grid-column: 1;
+}
+
+.other-user-container a,
+p {
+  margin-top: 5px;
+  grid-column: 2;
+}
+
+.other-user-container p {
+  opacity: 40%;
+}
+
+.announcement-card:hover {
+  box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.1);
+  transform: perspective(3000px) rotateX(5deg);
+  cursor: pointer;
+  
 }
